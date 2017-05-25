@@ -1,0 +1,11 @@
+1.part2部分按照
+	cd code
+	python basic_process_improved.py
+	python base_method.py
+	python spring_festival.py
+	python merge.py
+的顺序运行python程序
+2.data文件夹下的数据是第二阶段的，为了编写程序方便按照第一阶段提供的数据的文件命名方式
+3.运行python程序生成两个文件夹each_hotel_fill0和intermediate_result
+	intermediate_result是中间结果的存放位置，part2生成的最后的结果命名为part2result.csv
+	each_hotel_fill0是便于程序处理，将原有数据重新排序整合的数据存放的位置

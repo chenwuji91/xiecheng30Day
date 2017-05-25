@@ -1,0 +1,10 @@
+1.part3部分运行目录下的sh即可，按照
+	python ensemble.py part1result.csv part2result.csv part3_base.csv
+	mkdir result
+	mv part3_base.csv result
+	cd ../part2_final/code
+	python fit_spring.py
+	python wave.py
+的顺序运行python程序
+2.目录下需要的part1result.csv和part2result.csv是由part1部分和part2部分生成的结果文件
+3.运行的最后结果为目录result下的result_final.csv

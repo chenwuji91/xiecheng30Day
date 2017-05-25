@@ -1,0 +1,17 @@
+本程序的运行环境为 CentOS release 6.3 (Final)，Python 2.7.8，需要安装 numpy,scipy,sklearn,xgboost等基本的机器学习相关的包。
+
+执行run.sh文件，程序执行完毕后，将会得到名为part1result.csv的预测结果文件。（注：此文件并非最终结果文件！）
+
+注：如果想对其他酒店进行预测（即要预测的酒店不在本次比赛所预测酒店的范围内）
+	需要将包含这些酒店的 每日起价表hotelminprice_comp.csv文件(重要)，酒店每日间夜量表inHtl_cii_compfz_全年.csv，酒店基础信息表hotelstaticinfo_comp_静态表.csv以及要预测的酒店id表 HtlPredList_静态表.csv  放入data文件夹下并进行名称替换，替换完毕后执行run.sh文件即可
+	文件名替换规则如下
+	hotelminprice_comp.csv文件				保留一份原文件，复制一份该文件并更名为 htlprice.csv（即要有两份同内容但不同名称的文件）
+	inHtl_cii_compfz_全年.csv				直接更名为 htlcii.csv
+	hotelstaticinfo_comp_静态表.csv			直接更名为 htlinfo.csv
+	HtlPredList_静态表.csv					直接更名为 htlpredlist.csv
+
+注2：由于程序执行环境是linux环境，程序中利用了shell脚本进行模型训练参数的变换（见run.sh中的第34行至48行）
+	 如果放到windows下执行，需要手动替换模型参数。如果不能手动替换模型参数，请联系我。
+	 联系方式：秦宇君   15910789842		mrqin_26@126.com
+	 
+	 （建议解决方案：到https://git-for-windows.github.io/  下载相应版本的git-bash 配置windows下的linux环境，然后执行脚本）
